@@ -1,13 +1,23 @@
-import React from "react";
-import blogData from "../data/blog";
+// App.js
 
-console.log(blogData);
+import React from "react";
+import blogData from "../data/blog.js";
+import ArticleList from "./ArticleList";
 
 function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <header>
+        <h1>Overreacted by Amon Kiprotich</h1>
+      </header>
+
+      <main>
+        <ArticleList posts={blogData} />
+      </main>
+
+      <aside>
+        <p></p>
+      </aside>
     </div>
   );
 }
